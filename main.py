@@ -3,13 +3,10 @@ import mediapipe as mp
 import time
 import controller as cnt
 
-
-
 time.sleep(2.0)
 
 mp_draw=mp.solutions.drawing_utils
 mp_hand=mp.solutions.hands
-
 
 tipIds=[4,8,12,16,20]
 

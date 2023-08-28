@@ -1,9 +1,11 @@
 import pyfirmata
 
+#bellow i assign with port is using by Arduino - for other computer it can be other port - go chceck it in DEVICE MANAGER (WINDOWS) 
 comport= 'COM6'
 
 board=pyfirmata.Arduino(comport)
 
+#bellow i adding pinout for LED 1-5 in Arduino
 led_1=board.get_pin('d:13:o')
 led_2=board.get_pin('d:12:o')
 led_3=board.get_pin('d:11:o')
@@ -47,4 +49,3 @@ def led(total):
         led_3.write(1)
         led_4.write(1)
         led_5.write(1)
-
